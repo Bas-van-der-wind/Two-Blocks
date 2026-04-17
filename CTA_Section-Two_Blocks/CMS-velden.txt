@@ -1,0 +1,39 @@
+Structuur
+- Sectie titel: optioneel
+- Herhaalbare card-groep: 2 items standaard.
+
+Per card
+1. Card afbeelding
+- Label: Afbeelding
+- Verplicht: ja
+- Default waarde: voorbeeldafbeelding
+- Tooltip/helptekst: Upload een afbeelding die de kaart ondersteunt.
+- Beperkingen: JPG/PNG, minimale breedte 1200px.
+
+2. Card titel
+- Label: Titel
+- Verplicht: ja
+- Default waarde: Title
+- Tooltip/helptekst: Korte titel van maximaal 2 regels.
+- Beperkingen: Standaard text.
+
+3. Card tekst
+- Label: tekst
+- Verplicht: ja
+- Default waarde: Supporting text about the call-to-action goes here.
+- Tooltip/helptekst: Korte toelichting onder de titel.
+- Beperkingen: standaard text.
+
+4. Knop
+- Label: Knop
+- Verplicht: optioneel
+- Default waarde: Optional button
+- Tooltip/helptekst: Tekst die in de knop wordt getoond.
+- Beperkingen: plain text, geen HTML, geen emoji.
+
+5. Knoplink
+- Label: Link URL
+- Verplicht: optioneel
+- Default waarde: leeg
+- Tooltip/helptekst: Voeg de URL toe waar de bezoeker naartoe moet.
+- Beperkingen: geldige URL.

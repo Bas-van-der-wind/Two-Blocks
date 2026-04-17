@@ -1,0 +1,110 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+:root {
+	--card-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+	--overlay: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+body {
+	margin: 0;
+}
+
+#root {
+	min-height: 100vh;
+}
+
+.cta-section {
+	padding: 12px;
+}
+
+.cta-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.cta-card {
+	position: relative;
+	min-height: 384px;
+	overflow: hidden;
+	border-radius: 4px;
+	box-shadow: var(--card-shadow);
+	background: #d8d8d8;
+}
+
+.cta-card_image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.cta-card_overlay {
+	position: absolute;
+	inset: 0;
+	background: var(--overlay);
+}
+
+.cta-card_content {
+	position: relative;
+	z-index: 1;
+	min-height: 380px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 22px 18px 18px 20px;
+	color: white;
+}
+
+.cta-card_copy {
+	max-width: 78%;
+	text-align: left;
+}
+
+.cta-card_title {
+	margin: 0 0 4px;
+	font-size: 28px;
+	line-height: 1.2;
+	font-weight: 600;
+	color: white;
+}
+
+.cta-card_text {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.35;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.cta-title-part {
+	font-family: Georgia, 'Times New Roman', serif;
+	font-weight: 400;
+}
+
+.img-button {
+	width: 44px;
+	height: 44px;
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(255, 255, 255, 0.42);
+	border-radius: 2px;
+	text-decoration: none;
+	color: white;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 900px) {
+	.cta-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.cta-card,
+	.cta-card__content {
+		min-height: 320px;
+	}
+}
