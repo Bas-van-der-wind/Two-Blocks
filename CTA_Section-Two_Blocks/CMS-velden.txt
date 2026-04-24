@@ -1,6 +1,6 @@
 Structuur
 - Sectie titel: optioneel
-- Herhaalbare card-groep: 2 items standaard.
+- Herhaalbare card-groep: 2 items standaard, maximaal 4.
 
 Per card
 1. Card afbeelding
